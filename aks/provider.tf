@@ -14,7 +14,7 @@ terraform {
     resource_group_name  = "1-c2d93d90-playground-sandbox"
     storage_account_name = "tfstatebackendfiles"
     container_name       = "tfstate"
-    key                  = "rg.tfstate"
+    key                  = "aks.tfstate"
   }
 }
 
