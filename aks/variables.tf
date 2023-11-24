@@ -31,16 +31,6 @@ variable aks_service_principal_client_secret {
     default = "<SERVICE_PRINCIPAL_CLIENT_SECRET>"
 }
 
-variable "virtual_network" {
-    type    = string
-    default = "<VNET_NAME>"
-}
-
-variable "subnet" {
-    type    = string
-    default = "<SUBNET_NAME>"
-}
-
 variable "vm_size" {
   type = string
 }
