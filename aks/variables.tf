@@ -4,31 +4,31 @@ variable "subscription_id" {
 }
 
 variable "resource_group" {
-    default = "1-c2d93d90-playground-sandbox"
+  default = "1-c2d93d90-playground-sandbox"
 }
 
 variable "agent_count" {
-    default = 3
+  default = 3
 }
 
 variable "ssh_public_key" {
-    default = "~/.ssh/id_rsa.pub"
+  default = "~/.ssh/id_rsa.pub"
 }
 
 variable "dns_prefix" {
-      default = "<CLUSTER_NAME>"
+  default = "<CLUSTER_NAME>"
 }
 
-variable cluster_name {
-      default = "<CLUSTER_NAME>"
+variable "cluster_name" {
+  default = "<CLUSTER_NAME>"
 }
 
-variable aks_service_principal_app_id {
-    default = "<SERVICE_PRINCIPAL_APP_ID>"
+variable "aks_service_principal_app_id" {
+  default = "<SERVICE_PRINCIPAL_APP_ID>"
 }
 
-variable aks_service_principal_client_secret {
-    default = "<SERVICE_PRINCIPAL_CLIENT_SECRET>"
+variable "aks_service_principal_client_secret" {
+  default = "<SERVICE_PRINCIPAL_CLIENT_SECRET>"
 }
 
 variable "vm_size" {
