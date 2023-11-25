@@ -16,3 +16,10 @@ spec:
               name: stable-grafana
               port:
                 number: 80
+        - pathType: Prefix
+          path: "/login"
+          backend:
+            service:
+              name: stable-grafana
+              port:
+                number: 80
