@@ -59,8 +59,9 @@ You should see your 3 nodes returned with a STATUS of Ready
 
 Navigate into the /workload dir and run the following commands to deploy workload:
 ```
-kubectl create namespace graylog
+kubectl apply -f nginx-ingress-controller.yaml
 kubectl apply -f app_deployment.yaml
 kubectl apply -f app_svc.yaml
+kubectl apply -f hello-graylog-ingress.yaml
 ```
 
