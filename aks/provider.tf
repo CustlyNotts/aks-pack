@@ -10,8 +10,8 @@ terraform {
   }
 
   backend "azurerm" {
-    subscription_id      = "9734ed68-621d-47ed-babd-269110dbacb1"
-    resource_group_name  = "1-8d31ef95-playground-sandbox"
+    subscription_id      = "28e1e42a-4438-4c30-9a5f-7d7b488fd883"
+    resource_group_name  = "1-c2ba6c8a-playground-sandbox"
     storage_account_name = "tfstatebackendfiles"
     container_name       = "tfstate"
     key                  = "aks.tfstate"
