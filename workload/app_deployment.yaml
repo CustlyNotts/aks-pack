@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-graylog
+  namespace: graylog
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: hello-graylog
+  template:
+    metadata:
+      labels:
+        app: hello-graylog
+    spec:
+      containers:
+        - name: app-graylog
+          image: custlynotts/hellograylog
+          ports:
+            - name: web
+              containerPort: 3030
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: web
