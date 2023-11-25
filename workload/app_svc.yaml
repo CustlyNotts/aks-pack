@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: hello-graylog
+  name: hello-graylog-svc
   namespace: graylog
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: hello-graylog
   ports:

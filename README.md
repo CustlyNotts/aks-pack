@@ -14,7 +14,7 @@ Fill in the subscription ID `subscription_id`, Resource group `resource_group` a
 
 ### Create/Import RG
 
-Navigate into rg/ dir `cd rg/` and run the following commands to create your resource group
+Navigate into rg/ dir and run the following commands to create your resource group
 ```
 terraform init
 terraform plan -var-file vars/rg-swoom-test.tfvars
@@ -26,7 +26,7 @@ Type `yes` in response to the prompt
 
 Run the `ssh-keygen -m PEM -t rsa -b 4096` command to create an SSH key. Press the `Enter` key to select defaults.
 
-Navigate into aks/ dir `cd aks/` and run the following commands to deploy the aks cluster
+Navigate into aks/ dir and run the following commands to deploy the aks cluster
 ```
 terraform init
 terraform plan -var-file vars/aks-swoom-test.tfvars
@@ -56,3 +56,11 @@ Run `kubectl get nodes` to check if your nodes are running and healthy.
 You should see your 3 nodes returned with a STATUS of Ready
 
 ### Deploy the workload
+
+Navigate into the /workload dir and run the following commands to deploy workload:
+```
+kubectl create namespace graylog
+kubectl apply -f app_deployment.yaml
+kubectl apply -f app_svc.yaml
+```
+

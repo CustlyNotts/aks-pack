@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hello-graylog-ingress
+  namespace: dev
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: "swoom.custlynotts.co"
+    http:
+      paths:
+        - pathType: Prefix
+          path: "/"
+          backend:
+            service:
+              name: hello-graylog-svc
+              port:
+                number: 80
+        - pathType: Prefix
+          path: "/dashboard"
+          backend:
+            service:
+              name: stable-grafana
+              port:
+                number: 80
