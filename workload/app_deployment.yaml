@@ -1,3 +1,11 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: graylog
+  labels:
+    app: hello-graylog
+    
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
