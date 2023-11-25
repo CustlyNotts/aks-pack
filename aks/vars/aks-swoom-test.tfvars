@@ -1,4 +1,4 @@
-subscription_id                     = "2213e8b1-dbc7-4d54-8aff-b5e315df5e5b"
+subscription_id                     = "9734ed68-621d-47ed-babd-269110dbacb1"
 cluster_name                        = "aks-swoom-test"
 dns_prefix                          = "aks-swoom-test"
 agent_count                         = 3
