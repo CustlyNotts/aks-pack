@@ -7,9 +7,9 @@ Create storage account for tfstate backend
 Fill in the subscription ID `subscription_id`, Resource group `resource_group` and Service Pricipal credentials `aks_service_principal_app_id`, `aks_service_principal_client_secret`  in below files:
 ```
 /aks/provider.tf
-/aks/variables.tf
+/aks/vars/aks-swoom-test.tfvars
 /rg/provider.tf
-/rg/variables.tf
+/rg/vars/rg-swoom-test.tfvars
 ```
 
 ### Create/Import RG
