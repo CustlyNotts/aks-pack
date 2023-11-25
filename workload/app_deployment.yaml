@@ -4,7 +4,16 @@ metadata:
   name: graylog
   labels:
     app: hello-graylog
-    
+
+---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: prometheus
+  labels:
+    app: prometheus
+
 ---
 apiVersion: apps/v1
 kind: Deployment

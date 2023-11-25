@@ -65,3 +65,20 @@ kubectl apply -f app_svc.yaml
 kubectl apply -f hello-graylog-ingress.yaml
 ```
 
+### Deploy the Prometheus/Grafana Stack
+
+Run the following commands:
+```
+helm repo add stable https://charts.helm.sh/stable
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm search repo prometheus-community
+helm install stable prometheus-community/kube-prometheus-stack -n prometheus
+```
+
+Run the `kubectl get pods -n prometheus` command to view all newly deployed pods in the prometheus namespace
+
+Run the `kubectl edit svc stable-grafana -n prometheus` command to change the service type to loadbalancer by replacing `ClusterIP` with `LoadBalancer`.
+
+Run the `kubectl get svc -n prometheus` command to view the service information
+
+Access Grafana UI in the browser via the public IP of the stable-grafana service
