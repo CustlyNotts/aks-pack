@@ -4,7 +4,7 @@ variable "subscription_id" {
 }
 
 variable "resource_group" {
-  default = "1-c2d93d90-playground-sandbox"
+  default = "<RESOURCE_GROUP_NAME>"
 }
 
 variable "agent_count" {

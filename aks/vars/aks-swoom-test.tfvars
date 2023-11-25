@@ -1,10 +1,11 @@
 subscription_id                     = "9734ed68-621d-47ed-babd-269110dbacb1"
+resource_group                      = "1-8d31ef95-playground-sandbox"
 cluster_name                        = "aks-swoom-test"
 dns_prefix                          = "aks-swoom-test"
 agent_count                         = 3
 vm_size                             = "Standard_D2s_v3"
 os_disk_size_gb                     = 100
-aks_service_principal_app_id        = "ccfbc898-b364-4bb1-8b65-6fa76064ba6f"
-aks_service_principal_client_secret = "cR~8Q~GKzlhzCzpKeeE~JuX57jbvn4arbziqGbLF"
+aks_service_principal_app_id        = "235c3e73-3ad9-4931-b9f5-25e7f610ba74"
+aks_service_principal_client_secret = "f918Q~n52F3vDNh94cQdusMuv35BU-o2.OUCMcLG"
 load_balancer_sku                   = "Standard"
 network_plugin                      = "kubenet"
